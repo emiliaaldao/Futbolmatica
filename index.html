@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fútbol Matemático</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🇦🇷 Fútbol Matemático</h1>
+      <p>¡Resuelve 5 seguidas y gana una copa! 🏆</p>
+    </header>
+    <main>
+      <div id="challenge" class="challenge">
+        <p id="question">¿Cuánto es 2 + 3?</p>
+        <input type="number" id="answer" placeholder="Tu respuesta" />
+        <button onclick="checkAnswer()">Responder</button>
+        <p id="feedback"></p>
+      </div>
+      <div id="reward" class="reward hidden">
+        <p>¡Ganaste una copa! 🏆</p>
+      </div>
+      <div class="daily-challenge">
+        <p>Reto del día: Resuelve 10 operaciones sin errores</p>
+      </div>
+    </main>
+    <footer>
+      <p>Hecho con pasión futbolera ⚽️🇦🇷</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

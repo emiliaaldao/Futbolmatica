@@ -1,0 +1,44 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('cancha.jpg');
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  padding: 2rem;
+  max-width: 400px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px #0cf;
+}
+
+.challenge input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  width: 100px;
+}
+
+.challenge button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background-color: #00f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
