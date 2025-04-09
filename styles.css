@@ -12,9 +12,10 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   margin: auto;
   padding: 2rem;
-  max-width: 400px;
-  border-radius: 15px;
+  max-width: 500px;
+  border-radius: 20px;
   text-align: center;
+  height: 200px;
   box-shadow: 0 0 10px #0cf;
 }
 
