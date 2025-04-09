@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url('cancha.jpg');
+  background-image: url('messi_background.jpg');
   background-size: cover;
   color: white;
   margin: 0;
@@ -36,6 +36,12 @@ body {
 
 .hidden {
   display: none;
+}
+
+#yellow-card {
+  font-size: 2rem;
+  color: yellow;
+  margin-top: 1rem;
 }
 
 footer {

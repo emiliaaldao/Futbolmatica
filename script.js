@@ -1,6 +1,10 @@
 
 let currentQuestion = {};
 let streak = 0;
+let failCount = 0;
+
+const goalSound = new Audio('goal.mp3');
+const whistleSound = new Audio('whistle.mp3');
 
 function generateQuestion() {
   const operations = ['+', '-', '*', '/'];
@@ -24,16 +28,25 @@ function generateQuestion() {
 function checkAnswer() {
   const userAnswer = parseInt(document.getElementById('answer').value);
   const feedback = document.getElementById('feedback');
+  const yellowCard = document.getElementById('yellow-card');
   if (userAnswer === currentQuestion.correctAnswer) {
     feedback.textContent = "¡Correcto! ⚽";
+    goalSound.play();
     streak++;
+    failCount = 0;
+    yellowCard.textContent = '';
     if (streak === 5) {
       document.getElementById('reward').classList.remove('hidden');
       streak = 0;
     }
   } else {
     feedback.textContent = `Incorrecto. La respuesta era ${currentQuestion.correctAnswer}`;
+    whistleSound.play();
     streak = 0;
+    failCount++;
+    if (failCount === 3) {
+      yellowCard.textContent = "🟨 ¡Tarjeta amarilla!";
+    }
   }
   document.getElementById('answer').value = '';
   generateQuestion();
